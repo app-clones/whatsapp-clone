@@ -8,22 +8,17 @@ name: Build
 
 jobs:
     build:
-        name: Build App
         runs-on: macos-latest
         steps:
-            - uses: actions/checkout@v1
+            - uses: actions/checkout@v3
 
-            - name: install dependencies
-              uses: steebchen/flutter@v1.1.0
+            - uses: subosito/flutter-action@v2
               with:
-                  args: pub get
+                  channel: "stable"
+                  cache: true
 
-            - name: Build Web Project
-              uses: steebchen/flutter@v1.1.0
-              with:
-                  args: build web
+            - name: Install Dependencies
+              run: flutter pub get
 
-            - name: Build IOS Project
-              uses: steebchen/flutter@v1.1.0
-              with:
-                  args: build ios
+            - name: Build for IOS
+              run: flutter build ios --release --no-codesign
