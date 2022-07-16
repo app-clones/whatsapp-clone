@@ -27,7 +27,10 @@ class WebSearchBar extends StatelessWidget {
           hintText: "Search or start a new chat",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20),
-            borderSide: const BorderSide(width: 0, style: BorderStyle.none),
+            borderSide: const BorderSide(
+              width: 0,
+              style: BorderStyle.none,
+            ),
           ),
           contentPadding: const EdgeInsets.all(10),
         ),
