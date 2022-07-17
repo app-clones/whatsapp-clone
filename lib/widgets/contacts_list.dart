@@ -51,7 +51,7 @@ class ContactsList extends StatelessWidget {
                       data[index]["time"].toString(),
                       style: const TextStyle(
                         fontSize: 13,
-                        color: Colors.grey,
+                        color: greyColor,
                       ),
                     ),
                   ),

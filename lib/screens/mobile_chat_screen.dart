@@ -32,16 +32,16 @@ class MobileChatScreen extends StatelessWidget {
               filled: true,
               prefixIcon: const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Icon(Icons.emoji_emotions, color: Colors.grey),
+                child: Icon(Icons.emoji_emotions, color: greyColor),
               ),
               suffixIcon: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: const [
-                    Icon(Icons.camera_alt, color: Colors.grey),
-                    Icon(Icons.attach_file, color: Colors.grey),
-                    Icon(Icons.money, color: Colors.grey),
+                    Icon(Icons.camera_alt, color: greyColor),
+                    Icon(Icons.attach_file, color: greyColor),
+                    Icon(Icons.money, color: greyColor),
                   ],
                 ),
               ),

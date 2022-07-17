@@ -16,7 +16,7 @@ class MobileScreenLayout extends StatelessWidget {
           title: const Text(
             "Whatsapp",
             style: TextStyle(
-              color: Colors.grey,
+              color: greyColor,
               fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
@@ -25,18 +25,18 @@ class MobileScreenLayout extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.search, color: Colors.grey),
+              icon: const Icon(Icons.search, color: greyColor),
             ),
             IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.more_vert, color: Colors.grey),
+              icon: const Icon(Icons.more_vert, color: greyColor),
             ),
           ],
           bottom: const TabBar(
             indicatorColor: tabColor,
             indicatorWeight: 4,
             labelColor: tabColor,
-            unselectedLabelColor: Colors.grey,
+            unselectedLabelColor: greyColor,
             labelStyle: TextStyle(
               fontWeight: FontWeight.bold,
             ),
