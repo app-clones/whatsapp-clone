@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:whatsapp_clone/features/landing/screens/landing_screen.dart';
+import 'package:whatsapp_clone/router.dart';
 import 'firebase_options.dart';
 
 import 'package:flutter/material.dart';
@@ -26,7 +27,11 @@ class MyApp extends StatelessWidget {
       title: "Whatsapp Clone",
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
+        appBarTheme: const AppBarTheme(
+          color: appBarColor,
+        ),
       ),
+      onGenerateRoute: (settings) => generateRoute(settings),
       home: const LandingScreen(),
     );
   }
